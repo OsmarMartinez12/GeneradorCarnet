@@ -104,7 +104,6 @@
             // 
             this.txtCarnet.Location = new System.Drawing.Point(38, 446);
             this.txtCarnet.Name = "txtCarnet";
-            this.txtCarnet.ReadOnly = true;
             this.txtCarnet.Size = new System.Drawing.Size(186, 26);
             this.txtCarnet.TabIndex = 7;
             // 
@@ -116,6 +115,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Generar Carné";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -125,12 +125,13 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "Generar QR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(38, 518);
+            this.pictureBox1.Location = new System.Drawing.Point(373, 44);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(313, 289);
+            this.pictureBox1.Size = new System.Drawing.Size(911, 800);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
@@ -138,7 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 819);
+            this.ClientSize = new System.Drawing.Size(1358, 916);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
